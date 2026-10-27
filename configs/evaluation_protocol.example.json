@@ -1,0 +1,8 @@
+{
+  "coordinate_reviewed": false,
+  "reference_description": "REPLACE: reference source, coordinate/marker/time validation and uncertainty",
+  "geometry_frame": "REPLACE_WITH_VERIFIED_COMMON_FRAME",
+  "success_threshold_mm": 5,
+  "timestamp_tolerance_s": 0.001,
+  "note": "Thresholds are examples to be set on validation data, not an accuracy claim. Missing predictions count as failures."
+}

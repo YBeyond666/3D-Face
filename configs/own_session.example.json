@@ -1,0 +1,26 @@
+{
+  "description": "Paths relative to this spec. Replace all example metadata with actual capture fields. Numeric track IDs are NOT F labels.",
+  "sessions": [
+    {
+      "subject_id": "S001",
+      "session_id": "session_001",
+      "sequence_id": "mouth_open",
+      "camera_id": "front",
+      "video_path": "../data/raw/own/S001/session_001/rgb.mp4",
+      "frame_count": null,
+      "frame_step": 3,
+      "timestamps_path": "../data/raw/own/S001/session_001/frames.jsonl",
+      "timestamp_stream": "rgb",
+      "timestamp_index_key": null,
+      "timestamp_value_key": "device_ts_ms",
+      "timestamp_to_seconds": 0.001,
+      "clock_domain": "REPLACE_WITH_RECORDED_DOMAIN",
+      "points_path": null,
+      "points_rgb_index_key": "source_indices.rgb",
+      "points_unit": "mm",
+      "coordinate_frame": "REPLACE_WITH_ACTUAL_FRAME",
+      "point_id_mapping": {},
+      "calibration_path": null
+    }
+  ]
+}

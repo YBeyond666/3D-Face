@@ -1,0 +1,20 @@
+{
+  "updated": "2026-10-27",
+  "scope": "SMIRK and DECA; own capture and Multiface",
+  "target_machine": {"os": "Windows", "gpu": "RTX 5080", "gpu_count": 1, "reported_memory_gb": 64, "gpu_vram_gb": null},
+  "data": {"own": "collecting; actual samples not inspected", "multiface": "not_downloaded"},
+  "stages": [
+    {"id": 0, "name": "scope_and_interface_design", "status": "implemented_v0.1", "implemented_training_code": true},
+    {"id": 1, "name": "target_environment_validation", "status": "inspection_and_candidate_install_scripts_written_target_validation_pending"},
+    {"id": 2, "name": "data_adapter_implementation_and_validation", "status": "implemented_and_synthetic_files_tested_real_data_pending"},
+    {"id": 3, "name": "pretrained_inference", "status": "adapters_and_export_implemented_real_model_execution_pending"},
+    {"id": 4, "name": "geometry_and_evaluation_validation", "status": "sparse_point_numerics_tested_actual_correspondence_and_reference_pending"},
+    {"id": 5, "name": "four_group_training_smoke_runs", "status": "runner_cpu_surrogate_update_and_exact_resume_tested_real_four_group_runs_pending"},
+    {"id": 6, "name": "freeze_formal_splits_and_budgets", "status": "configuration_generator_implemented_formal_data_budget_pending"},
+    {"id": 7, "name": "twelve_formal_finetuning_runs", "status": "not_started"},
+    {"id": 8, "name": "aggregation_and_reports", "status": "not_started"}
+  ],
+  "verification": {"tests_run": 28, "failures": 0, "errors": 0, "skipped": 0, "platform": "macOS CPU", "torch": "2.7.1", "report": "初版验证报告.md"},
+  "version": "0.1.0",
+  "results": null
+}

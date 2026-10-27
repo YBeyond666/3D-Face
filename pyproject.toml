@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "face-reconstruction-benchmark"
+version = "0.1.0"
+description = "SMIRK/DECA adapters for own capture and Multiface experiments"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24", "Pillow>=10"]
+
+[project.optional-dependencies]
+video = ["opencv-python>=4.8"]
+preprocess = ["opencv-python>=4.8", "mediapipe>=0.10", "face-alignment>=1.4"]
+
+[project.scripts]
+facebench = "facebench.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

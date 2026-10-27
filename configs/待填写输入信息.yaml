@@ -1,0 +1,76 @@
+# 信息收集模板，不是可直接执行的模型训练配置。
+# 未知项保留 null；无需填写账号、密码或密钥。
+machine:
+  os: Windows
+  windows_version: null
+  gpu_model: RTX 5080
+  gpu_count: 1
+  reported_memory_gb: 64
+  reported_memory_is_system_ram: null
+  gpu_vram_gb: null
+  driver_version: null
+  wsl2_installed: null
+  wsl_distribution: null
+  free_ssd_gb: null
+  project_directory_windows: null
+  project_directory_wsl: null
+  internet_github_available: null
+  internet_google_drive_available: null
+
+own_data:
+  status: collecting
+  data_root: null
+  sample_session_path: null
+  capture_code_version: null
+  rgb_file_example: null
+  rgb_width: null
+  rgb_height: null
+  rgb_fps: null
+  timestamp_file_example: null
+  timestamp_unit: null
+  clock_domain: null
+  points_file_example: null
+  points_unit: null
+  coordinate_frame: null
+  marker_count: null
+  planned_marker_count: 32
+  planned_marker_ids: [F01, F02, F03, F04, F05, F06, F07, F08, F09, F10, F11, F12, F13, F14, F15, F16, F17, F18, F19, F20, F21, F22, F23, F24, F25, F26, F27, F28, F29, F30, F31, F32]
+  point_id_is_stable_physical_marker: null
+  marker_layout_file: ../../../工作暂存/Markdown附件/SMIRK与DECA实验实施方案.assets/人脸标记布局-用户提供.jpg
+  marker_layout_status: planned_diagram_received_actual_placement_and_track_mapping_unverified
+  track_id_to_marker_id_file: null
+  markers_visible_in_rgb: null
+  points_are_raw_or_smoothed: null
+  calibration_file_example: null
+  rgb_points_alignment_description: null
+  neutral_calibration_segment: null
+  subject_count: null
+  sessions_per_subject: null
+  subject_task_manifest: null
+
+multiface:
+  status: not_downloaded
+  data_root: null
+  mini_downloaded: false
+  identities_available: null
+  assets_available: []
+
+model_assets:
+  flame2020_available: null
+  smirk_checkpoint_available: null
+  deca_checkpoint_available: null
+  auxiliary_models_available: []
+  asset_directory: null
+
+experiment:
+  models: [smirk, deca]
+  training_sources: [own, multiface]
+  initialization: official_pretrained_per_model
+  primary_training_recipe: common_image_supervision
+  measured_point_supervision: separate_extension_after_correspondence_validation
+  evaluation_sets: [own_identity_disjoint_test, multiface_identity_disjoint_test]
+  formal_training_seeds: [17, 29, 43]
+  split_subjects: null
+  effective_batch_size: null
+  max_steps: null
+  primary_3d_metric: pending_reference_validation

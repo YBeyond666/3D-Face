@@ -1,0 +1,13 @@
+{
+  "model": "smirk",
+  "vertex_count": 5023,
+  "correspondence_reviewed": false,
+  "calibration_source": null,
+  "output_unit": "mm",
+  "output_frame": "REPLACE_WITH_VERIFIED_COMMON_FRAME",
+  "point_ids": [],
+  "triangle_vertex_indices": [],
+  "barycentric_weights": [],
+  "fixed_subject_transforms": {},
+  "note": "Populate real fixed surface correspondences and calibration transforms. Empty template cannot produce valid scores. Do not fit a fresh transform to each test frame."
+}

@@ -1,0 +1,20 @@
+{
+  "device": "cuda:0",
+  "trusted_legacy_assets": false,
+  "max_steps": 100,
+  "batch_subjects": 1,
+  "deca_images_per_subject": 2,
+  "save_every": 50,
+  "val_every": 50,
+  "max_val_per_subject": 8,
+  "models": {
+    "smirk": {"upstream_root": "../third_party/smirk", "checkpoint": "../third_party/smirk/pretrained_models/SMIRK_em1.pt", "upstream_overrides": {"train": {"loss_weights": {"emotion_loss": 0, "mica_loss": 0}}}},
+    "deca": {"upstream_root": "../third_party/deca", "checkpoint": "../third_party/deca/data/deca_model.tar", "upstream_overrides": {}}
+  },
+  "sources": {
+    "own": {"train_manifest": "../data/own/split/train.jsonl"},
+    "multiface": {"train_manifest": "../data/multiface/split/train.jsonl"}
+  },
+  "val_manifest": "../data/common_val.jsonl",
+  "output_root": "../outputs"
+}
